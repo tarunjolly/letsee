@@ -34,7 +34,7 @@ $(document).ready(function () {
     let player = {};
     let other = {};
     var board=[[null,null,null],[null,null,null],[null,null,null]];
-    let socket = io('ws://localhost:5000');
+    let socket = io.connect();
     let symbol;
     let fullname;
 
