@@ -1,0 +1,53 @@
+body{
+background-color: #3C3B3F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.tictactoe {
+    /* height: 100%; */
+    width: 60%;
+    /* align-content: center; */
+    border: 1px solid black;
+    /* margin: 10px; */
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+    /* align-items: center; */
+    text-align: center;
+    /* display: none; */
+    white-space: nowrap;
+  overflow: hidden;
+}
+
+.gamebtn{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    color:red;
+    font-size: large;
+
+}
+
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+@media only screen and (max-width: 550px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .gamebtn{
+     height: 50px;
+    width: 50px;
+
+    }
+
+  }

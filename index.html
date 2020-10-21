@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="script.js"></script>
+    
+
+
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="starting">
+        <div>
+            <h3> Create a new game </h3>
+            <input type="text" value="" id="newgamename" placeholder="Enter your name">
+            <button id="newgame"> New Game</button>
+
+        </div>
+
+        <div>
+            <h3>Join an Existing Game</h3>
+            <input type="text" value="" placeholder="Enter your name" id="joingamename">
+            <input type="text" value="" placeholder="Enter game id" id="joinroom">
+            <button id="joingame">Join Game</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="tictactoe">
+        <div id="one">
+        <button class="gamebtn" id="r0c0" > &nbsp; </button>
+        <button class="gamebtn" id="r0c1" > &nbsp;</button>
+        <button class="gamebtn" id="r0c2" >&nbsp;</button>
+        </div>
+
+
+        
+        <div id="two">
+        <button class="gamebtn" id="r1c0">&nbsp;</button>
+        <button class="gamebtn" id="r1c1">&nbsp; </button>
+        <button class="gamebtn" id="r1c2">&nbsp;</button>
+        </div>
+        
+        
+        <div id="three">
+        <button class="gamebtn" id="r2c0" >&nbsp;</button>
+        <button class="gamebtn" id="r2c1">&nbsp;</button>
+        <button class="gamebtn" id="r2c2">&nbsp;</button>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+ 
+
+    <input id="message">
+
+    
+
+
+    
+
+</body>
+
+</html>
