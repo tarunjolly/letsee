@@ -123,6 +123,6 @@ io.on('connect', function(socket){
 
 
 
- server.listen(5000, () => {
+ server.listen(5000 || process.env.PORT, () => {
      console.log("http://localhost:5000");
  })
